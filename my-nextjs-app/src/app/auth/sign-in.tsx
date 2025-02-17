@@ -1,9 +1,5 @@
-import { SignIn } from '@clerk/clerk-react';
+import { SignIn } from '@clerk/nextjs'
 
-const SignInPage = () => (
-  <div>
-    <SignIn path="/auth/sign-in" routing="path" signUpUrl="/auth/sign-up" />
-  </div>
-);
-
-export default SignInPage;
+export default function SignInPage() {
+  return <SignIn />
+}
