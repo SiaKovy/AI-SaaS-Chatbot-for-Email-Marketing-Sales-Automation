@@ -1,0 +1,23 @@
+/* filepath: /c:/Users/Seilt/source/repos/AI-SaaS-Chatbot-for-Email-Marketing-Sales-Automation/my-nextjs-app/src/components/Sidebar.module.css */
+.sidebarExpanded {
+    width: 200px;
+    transition: width 0.3s;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  .sidebarCollapsed {
+    width: 50px;
+    transition: width 0.3s;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  .toggleButton {
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+  }

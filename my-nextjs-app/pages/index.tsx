@@ -1,4 +1,3 @@
-// filepath: /c:/Users/Seilt/source/repos/AI-SaaS-Chatbot-for-Email-Marketing-Sales-Automation/my-nextjs-app/pages/index.tsx
 import React from 'react';
 import { useAuth, useUser } from '@clerk/clerk-react';
 import styles from '../styles/Home.module.css';
