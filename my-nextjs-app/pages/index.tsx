@@ -1,13 +1,20 @@
+// filepath: /c:/Users/Seilt/source/repos/AI-SaaS-Chatbot-for-Email-Marketing-Sales-Automation/my-nextjs-app/pages/index.tsx
 import React from 'react';
+import { useAuth, useUser } from '@clerk/clerk-react';
 import styles from '../styles/Home.module.css';
 
 const Home: React.FC = () => {
+  const { isSignedIn } = useAuth();
+  const { user } = useUser();
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Welcome to My Next.js App!</h1>
-      <p className={styles.description}>
-        This is the homepage of your Next.js application.
-      </p>
+      {isSignedIn ? (
+        <p className={styles.description}>Hello, {user?.firstName}!</p>
+      ) : (
+        <p className={styles.description}>Please sign in to continue.</p>
+      )}
     </div>
   );
 };
