@@ -1,0 +1,24 @@
+/* filepath: /c:/Users/Seilt/source/repos/AI-SaaS-Chatbot-for-Email-Marketing-Sales-Automation/my-nextjs-app/src/components/MenuItem.module.css */
+.menuItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .menuItem:hover {
+    background-color: #cd26a3;
+  }
+  
+  .active {
+    background-color: #bc4e4e;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .label {
+    flex-grow: 1;
+  }

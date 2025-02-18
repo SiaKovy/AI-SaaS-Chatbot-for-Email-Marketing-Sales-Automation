@@ -2,14 +2,14 @@
 .sidebarExpanded {
     width: 200px;
     transition: width 0.3s;
-    background-color: #f4f4f4;
+    background-color: #9ae50e;
     padding: 10px;
   }
   
   .sidebarCollapsed {
     width: 50px;
     transition: width 0.3s;
-    background-color: #f4f4f4;
+    background-color: #14417b;
     padding: 10px;
   }
   
@@ -17,7 +17,7 @@
     margin-bottom: 10px;
   }
   
-  .content {
+  .menu {
     display: flex;
     flex-direction: column;
   }
