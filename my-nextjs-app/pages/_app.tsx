@@ -1,7 +1,5 @@
-// filepath: /c:/Users/Seilt/source/repos/AI-SaaS-Chatbot-for-Email-Marketing-Sales-Automation/my-nextjs-app/pages/_app.tsx
-import { ClerkProvider } from '@clerk/clerk-react';
+import { ClerkProvider } from '@clerk/nextjs';
 import '../styles/globals.css';
-
 import { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -21,9 +21,18 @@ self["webpackHotUpdate_N_E"]("webpack",{},
 /******/ 	};
 /******/ })();
 /******/ 
+/******/ /* webpack/runtime/get javascript chunk filename */
+/******/ (() => {
+/******/ 	// This function allow to reference async chunks
+/******/ 	__webpack_require__.u = (chunkId) => {
+/******/ 		// return url for filenames based on template
+/******/ 		return "static/chunks/" + chunkId + ".js";
+/******/ 	};
+/******/ })();
+/******/ 
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("da55860e6e10415c")
+/******/ 	__webpack_require__.h = () => ("2c98faa92b2d3cff")
 /******/ })();
 /******/ 
 /******/ /* webpack/runtime/nonce */

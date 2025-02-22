@@ -1,10 +1,17 @@
 import React from 'react';
-import { useAuth, useUser } from '@clerk/clerk-react';
+import { useAuth } from '@clerk/nextjs';
+import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 
 const Home: React.FC = () => {
-  const { isSignedIn } = useAuth();
-  const { user } = useUser();
+  const { isSignedIn, user } = useAuth();
+  const router = useRouter();
+
+  React.useEffect(() => {
+    if (!isSignedIn) {
+      router.push('/auth/sign-in');
+    }
+  }, [isSignedIn, router]);
 
   return (
     <div className={styles.container}>

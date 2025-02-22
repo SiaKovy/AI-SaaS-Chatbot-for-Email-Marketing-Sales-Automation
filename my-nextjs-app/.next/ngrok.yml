@@ -1,4 +1,0 @@
-tunnels:
-  my-app:
-    addr: https://localhost:3000
-    proto: https
