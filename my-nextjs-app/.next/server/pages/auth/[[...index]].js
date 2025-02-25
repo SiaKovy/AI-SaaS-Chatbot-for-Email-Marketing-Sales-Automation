@@ -77,7 +77,7 @@ module.exports = require("next/dist/compiled/next-server/pages.runtime.dev.js");
 
 /***/ }),
 
-/***/ "../../server/app-render/action-async-storage.external":
+/***/ "../app-render/action-async-storage.external":
 /*!*******************************************************************************!*\
   !*** external "next/dist/server/app-render/action-async-storage.external.js" ***!
   \*******************************************************************************/
@@ -88,7 +88,7 @@ module.exports = require("next/dist/server/app-render/action-async-storage.exter
 
 /***/ }),
 
-/***/ "../../server/app-render/work-async-storage.external":
+/***/ "../app-render/work-async-storage.external":
 /*!*****************************************************************************!*\
   !*** external "next/dist/server/app-render/work-async-storage.external.js" ***!
   \*****************************************************************************/
