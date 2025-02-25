@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createUser } from '../../../../lib/userActions';
+import { createUser } from '../../lib/userActions';
 
 export async function POST(req: Request) {
   const { user } = await req.json();
@@ -17,6 +17,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json(newUser, { status: 201 });
   } catch (error) {
+    console.error(error); // Log the error to avoid unused variable warning
     return NextResponse.json({ error: 'Failed to create user' }, { status: 500 });
   }
 }

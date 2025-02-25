@@ -1,3 +1,4 @@
+import React from 'react';
 import { ClerkProvider } from '@clerk/nextjs';
 import '../styles/globals.css';
 import { AppProps } from 'next/app';

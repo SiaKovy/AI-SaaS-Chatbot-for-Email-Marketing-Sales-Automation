@@ -1,5 +1,5 @@
 // filepath: /c:/Users/Seilt/source/repos/AI-SaaS-Chatbot-for-Email-Marketing-Sales-Automation/my-nextjs-app/pages/auth/[[...index]].tsx
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { SignIn, SignedIn, SignedOut } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
 
